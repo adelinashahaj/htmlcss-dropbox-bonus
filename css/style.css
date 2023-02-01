@@ -122,10 +122,12 @@ i.fa-solid.fa-arrow-down {
     font-size: 40px;
     margin-left: 10px;
     margin-top: 90px;
+    color: black;
 }
 .jumbo{
     width: 100%;
 }
+
 /* ----- fine secion jumbotron----- */
 
 /* ----- inizio secion card senza img----- */
@@ -395,17 +397,48 @@ img{
     
 }
  /* ----- inizio elenco di domande ----- */
- 
- .prima-dom{
-    line-height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ .domande{
+    padding-bottom: 40px;
  }
+ 
  h2{
     font-size: 40px;
  }
- 
+ h6{
+    padding: 20px;
+    font-size: 15px;
+ }
+ .prima-dom{
+    line-height: 50%;
+    display: inline-block;
+    position: relative;
+ }
+ #box-arrow-down{
+   position: relative;
+   left: 980px;
+   bottom: 20px;
+ }
+ #box-arrow-up{
+    position: relative;
+   left: 980px;
+   bottom: 20px;
+ }
+ .prima-dom  #box-arrow-up{
+    display: none;
+ }
+ .prima-dom p{
+    display: none;
+
+ }
+ .prima-dom:hover #box-arrow-up{
+    display: block;
+ }
+ .prima-dom:hover #box-arrow-down{
+    display: none;
+}
+.prima-dom:hover p  {
+    display: block;
+}
 
 
 /* -----fine elenco di domande ----- */
